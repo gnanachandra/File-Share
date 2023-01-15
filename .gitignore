@@ -1,0 +1,9 @@
+node_modules
+/.env
+/.gcloudignore
+/app.yaml
+/gcs-key.json
+/help.txt
+/Download.js
+/arrow-down-solid.svg
+/DownloadFinal.html

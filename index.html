@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing Application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/filetransferapplicationfiles/googlefilesimage.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h3><a href="./Download.html">Download File</a></h3>
+    <form id="file-upload-form" action="/uploadFile">
+        <section class="upload-container">
+            <div class="drop-zone" >
+                <div class="icon-container">
+                    <img src="https://storage.googleapis.com/filetransferapplicationfiles/file.svg" alt="logo" draggable="false" class="left"/>
+                    <img src="https://storage.googleapis.com/filetransferapplicationfiles/file.svg" alt="logo" draggable="false" class="center"/>
+                    <img src="https://storage.googleapis.com/filetransferapplicationfiles/file.svg" alt="logo" draggable="false" class="right"/>
+                </div>
+                
+                <input type="file" id="file-input">
+                <p class="title"><span class="browseBtn">Browse</span> or Drop Files Here</p>
+            </div>
+        </section>
+    </form>
+    <br/><br/>
+    <section id="loading-section" class="invisible">
+        <div class="loader-div">
+            <div id="loader"></div>
+            <p style="text-align: center;">Processing</p>
+        </div>
+    </section>
+    <br/><br/>
+    <section id="output" class="output-section invisible">
+        <div class="sharing-container">
+            <h2 style="text-align: center;"></h2>
+            <br/>
+            <div class="input-container">
+                <input type="text" id="url-field" readonly>
+                <img class="copyicon" src="https://storage.googleapis.com/filetransferapplicationfiles/copy-icon.svg" alt="copy" height="10px" width="10px" style="margin-top: 3px;">
+            </div>
+        </div>
+        <br/>
+        <h3 style="text-align: center;">CODE Expires in 10 min</h3>
+    </section>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

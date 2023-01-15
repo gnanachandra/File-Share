@@ -1,0 +1,49 @@
+
+body,html{
+    font-family: system-ui;
+    background-color: skyblue;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+body,.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.download-container{
+    background-color: azure;
+    border-radius: 25px;
+    box-shadow: 0px 20px 20px gray;
+    padding: 30px;
+}
+.input-container{
+    width: 300px;
+    min-height: 200px;
+    border: 2px dashed blue;
+    border-radius: 10px;
+    transition: all 250ms;
+}
+
+.icon-container{
+    position: relative;
+    width: 75px;
+    height: 100px;
+}
+.icon-container img{
+    width: 75px;
+    position: absolute;
+    transform-origin: bottom;
+    transition: transform 250ms ease-in-out;
+}
+.download-btn{
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    font-size:20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
