@@ -5,14 +5,19 @@ Website Link : **https://decent-glazing-373304.el.r.appspot.com/**
 Technology Stack :
 
 Frontend : HTML5 , CSS3 , JS
+
 Backend : NodeJS,Express
 
+**Storage and Deployment :**
+
 Files are stored in Google cloud storage bucket .
-Deployed in Google cloud app engine flexible environment (node version - 16)
+
+Deployed on Google cloud app engine flexible environment (node version - 16)
 
 **How it works**
 
 **Upload Part**
+
 The home page (index.html) will be displayed to the use when the user enters the website
 1. user clicks on **Browse** and select the file to be uploaded
 2. After the file is selected a request is made to the backend (/uploadFile) to upload the file to google cloud storage bucket
