@@ -90,7 +90,18 @@ app.post("/DownloadFile", async (req,res)=>{
     {
         const fileURL = doc["long_url"];
         const fileName = fileURL.split("/")[4];
-        return res.status(200).send({status: "200", message:`${fileURL}`})
+        var DAY_IN_MS = 24 * 60 * 60 * 1000;
+        const createdtime = doc["createdAt"].getTime();
+        const timeNow = new Date().getTime();
+        console.log(timeNow-createdtime > 60000)
+        if(timeNow-createdtime > 600000)
+        {
+            return res.status(200).send({status:"200",message:"CODE Expired"});
+        }
+        else{
+            return res.status(200).send({status: "200", message:`${fileURL}`});
+        }
+        
     }
     else{ 
         console.log(new Date());

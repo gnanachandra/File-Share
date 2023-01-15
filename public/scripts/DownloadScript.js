@@ -4,8 +4,8 @@ form.addEventListener("submit",async (e)=>{
     e.preventDefault();
     const formData = new FormData();
     formData.append("fileID",codeInput.value);
-    //https://decent-glazing-373304.el.r.appspot.com/DownloadFile
-    const response = await fetch("https://decent-glazing-373304.el.r.appspot.com/DownloadFile",{
+    
+    const response = await fetch("http://localhost:3500/DownloadFile",{
         method:"POST",
         body : formData
     }).catch((err)=>{
@@ -16,7 +16,7 @@ form.addEventListener("submit",async (e)=>{
     try{
         const json = await response.json();
         console.log(json);
-        if(json.message !== "Invalid CODE Entered")
+        if(json.message !== "Invalid CODE Entered" && json.message !== "CODE Expired")
         {
             const error = document.getElementById("statusMessage");
             error.textContent = "Downloading File";

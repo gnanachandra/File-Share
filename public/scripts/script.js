@@ -49,7 +49,7 @@ fileInput.addEventListener("change",()=>{
 
 
 
-//dave gray code
+
 
 const form = document.getElementById("file-upload-form");
 form.addEventListener("submit",(e)=>{
@@ -62,8 +62,8 @@ const sendFiles = async () =>{
     const myFiles = document.getElementById("file-input").files[0];
     const formData = new FormData();
     formData.append('file-to-be-uploaded',myFiles);
-    //"https://decent-glazing-373304.el.r.appspot.com/uploadFile"
-    const response = await fetch("https://decent-glazing-373304.el.r.appspot.com/uploadFile",{
+    
+    const response = await fetch("http://localhost:3500/uploadFile",{
         method:"POST",
         body:formData
     }).catch(err=>{
