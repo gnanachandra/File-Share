@@ -34,11 +34,10 @@ User copies the code and shares it to the person to whom he wants to share the f
 4. if the entered id is correct the file will be displayed in the browser
 5. if the entered id is wrong an error message "INVALID CODE ENTERED" will be displayed.
 
-**TO BE IMPLEMENTED**
 
-<del>1. code expires in 10 min</del> -> implemented
+**CODE Expires in 10 min**
 
-2. Responsive CSS
+
 
 -> The file is being displayed in the browser instead of being downloaded because of the external url being provided.
 
