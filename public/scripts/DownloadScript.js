@@ -5,7 +5,7 @@ form.addEventListener("submit",async (e)=>{
     const formData = new FormData();
     formData.append("fileID",codeInput.value);
     
-    const response = await fetch("http://localhost:3500/DownloadFile",{
+    const response = await fetch("https://decent-glazing-373304.el.r.appspot.com//DownloadFile",{
         method:"POST",
         body : formData
     }).catch((err)=>{

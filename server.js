@@ -9,7 +9,7 @@ const connectDb = require("./connect");
 const URLSchema = require("./models/URLSchema");
 const cors = require("cors");
 const formidable = require("formidable");
-    
+      
 const storage = new Storage({
     projectId : process.env.PROJECT_ID,
     keyFilename:"gcs-key.json",
@@ -19,12 +19,11 @@ const bucket = storage.bucket(process.env.BUCKET_NAME);
 
 const multer = Multer({
     storage:Multer.memoryStorage()
-});
+}); 
  
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 const app = express();
 app.use(cors());
-app.use(express.urlencoded());
 app.use(express.json());
 
 const start =  async() =>{
