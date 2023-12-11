@@ -63,7 +63,7 @@ const sendFiles = async () =>{
     const formData = new FormData();
     formData.append('file-to-be-uploaded',myFiles);
     
-    const response = await fetch("https://decent-glazing-373304.el.r.appspot.com/uploadFile",{
+    const response = await fetch("https://fileshare-dot-gnanachandra.el.r.appspot.com/uploadFile",{
         method:"POST",
         body:formData
     }).catch(err=>{

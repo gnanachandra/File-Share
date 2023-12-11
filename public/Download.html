@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Download File</title>
     <link
       rel="stylesheet"
@@ -12,27 +12,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/filetransferapplicationfiles/googlefilesimage.png">
-    <link rel="stylesheet" href="css/Download.css">
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://storage.googleapis.com/filetransferapplicationfiles/googlefilesimage.png"
+    />
+    <link rel="stylesheet" href="css/Download.css" />
+  </head>
+  <body>
     <div id="uploadPage">
-        <a href="../index.html"><h2>Upload File Here</h2></a>
+      <a href="../index.html"><h2>Upload File Here</h2></a>
     </div>
-  
-  <div class="download-container">
-    <form enctype="multipart/form-data">
+
+    <div class="download-container">
+      <form enctype="multipart/form-data">
         <div class="input-container">
-            <div class="icon-container">
-                <img src="https://storage.googleapis.com/filetransferapplicationfiles/downloadImage.png" alt="download" height="70px" width="70px"><br/>
-            </div>
-            <input type="text" id="code-input" placeholder="Enter CODE : " name="fileID" required/><br/>
-            <input type="submit" value="Download File" id="downloadBtn"/>
-        </div>   
-    </form>
-    <h2 id="statusMessage"></h2>
-</div>
-    
+          <div class="icon-container">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD5UlEQVR4nO2bR2hVQRSGv6gkEhVsEE0sCxFSFLEhwbhRERRBQdxoiFsFo6BgQBGzsZvYNhEUrFhQUJC4MIKgGIN9ZUXFhaggtheNLU8G5sFzMreXNze8HwZCMqf995yZc2duII884kIRMAtYB5wGrgIdwF2gDTgGbAKqgX70IkwGDgIfgbTL8RloASpJMMYC5zwErRvdwEWpK1FYC3wPGHz2SEmdBRiO/sBxm0DuAFuBeUAFMAwYAowD5gObgXs28keBQgxFoVzMdGl8BpjqQdcEWT7dGn1tckE1Cn1kkKqzr4A5AfTWAK81ek+ZVg4bNU7elOkdFIOB6xr9wqYRqAC6FOeuAcUh2ijWlJewWY4BuKE4JlJ2eAR2hgIvFVsiM3KKGs2CNzNCe9WahVF0lznDBcWZszHYPKnYPE/M6AssBo4AfxRnwmhdvTZJwofDwCLpW6RYCDy1cOR+SDaCdIxPgAVEgAJgl0VjkhnrQ7IVtG0WPm4nZOy0MfgbuBTitpcOaewIM+3Tmj24Wba3uWxLhe0p0pcuTSYELod+mr33DVCFeZggfcv29UXQhXGpovAHMBFzMUmTCUuCKDyhKNuL+Tig+CyO2nzjuaJsOuZjhuLzsyDKUoqyAZiPgYrPIgbPGAVs06z+IzAfwzR+i1OoMrcK6oBvFnvrbMzHNAvfvwLLnYRXOHR7or7s9uQ1wG1N6YQxUlJ3vUPvUeHQJdbapX2nheAXYI+NUZFeDyMI2mo8cEjpLcAnC9lOK9lmZeJPYANQij2KYg4+mwSnLrREZqV6RC/ea3rgmTKpAXdYk4PgM2O1Sx9XKnKP1Ql9Ne/2Tk8+gw5F7rKXFdcDRIm2KrbaXcoOAv5myf2SJ9n/ve76JUDdMYSjUWG0ZmX3Q4B4g+2BJz5LQE3LqOHH3iqnEhBo0iyCDS4ywWQCSizuKXfrJo8Jaf+OGkH9+ypLSYs6h0YoTALmKiMOAv666QZrbVrhMAkIS87Lk1/m1kipfBl65KMsTCIgJZs08TI0koiQzjEBOUc6TwD5DEjnSwDHmqxS7g6tSqfS4dg9kWtAOfAWeC/P763ksudN7C0ElMugMn/PkKDKqfM+WJCQOAIaNXPeufxdow97sSPtwqEdPjo3q0uYRBLglYR9Np/BJZaAAmC/i+BbHL4BTCwBbkhwCj7xBNiRcMjl15+JJwAZaJM8e+iWP7v99LVXEJDBeDm8oFcR4Ad5AshnAEaVwLcEXIxEig7FqdaISBDBX/F5NRYp6n30+XFfjkaKInlVHXfwD0z6B6qymElw+kAiJyiUKdke8GLFagidt6QNY558HiQc/wBtFiG79VPpVwAAAABJRU5ErkJggg=="
+              alt="download"
+              height="70px"
+              width="70px"
+            /><br />
+          </div>
+          <input
+            type="text"
+            id="code-input"
+            placeholder="Enter CODE : "
+            name="fileID"
+            required
+          /><br />
+          <input type="submit" value="Download File" id="downloadBtn" />
+        </div>
+      </form>
+      <h2 id="statusMessage"></h2>
+    </div>
+
     <script src="scripts/DownloadScript.js"></script>
-</body>
+  </body>
 </html>
